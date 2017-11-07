@@ -19,3 +19,9 @@ const isGreaterThan = (numberOne, numberTwo) => {
 }
 
 console.log(isGreaterThan(10, 5));
+
+// Arrow function as concise body
+
+const square = number => number * number;
+
+console.log(`The square of 5 is ${square(5)}.`); 
