@@ -19,4 +19,5 @@ console.log(word[2]);
 
 let myArray2 = ['String 1', true, 'Another string'];
 typeof myArray2;
-myArray2.length;
+
+console.log(myArray2.length);
