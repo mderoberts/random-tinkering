@@ -21,3 +21,16 @@ let myArray2 = ['String 1', true, 'Another string'];
 typeof myArray2;
 
 console.log(myArray2.length);
+
+// Push and pop
+myArray.push('String 4', 'String 5');
+myArray.pop();
+console.log(myArray);
+
+//Playing with slice
+
+let groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+let groceryList2 = groceryList.slice(3, 6);
+
+console.log(groceryList2);
+console.log(groceryList);
