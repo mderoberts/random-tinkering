@@ -35,3 +35,15 @@ for (let myThingsIndex = myThings.length - 1; myThingsIndex >= 0; myThingsIndex-
     }
   }
 }
+
+// While loop
+
+let cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+let currentCard = 'Heart';
+
+while (currentCard != 'Spade') {
+  console.log(currentCard);
+  currentCard = cards[Math.floor(Math.random() * 4)];
+}
+
+console.log('Success! You flipped a Spade!');
