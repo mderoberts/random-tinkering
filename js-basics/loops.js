@@ -20,3 +20,18 @@ for (let myThingsIndex = 0; myThingsIndex < myThings.length; myThingsIndex++) {
     }
   }
 }
+
+// Nested for loop backward
+
+let myThings = ['Thing 1', 'Thing 2', 'Thing 3'];
+
+let friendThings = ['Thing 3', 'Thing 4', 'Thing 5'];
+
+for (let myThingsIndex = myThings.length - 1; myThingsIndex >= 0; myThingsIndex--) {
+  
+  for (let friendThingsIndex = friendThings.length - 1 ; friendThingsIndex >= 0; friendThingsIndex--) {
+    if (myThings[myThingsIndex] === friendThings[friendThingsIndex]) {
+      console.log(myThings[myThingsIndex]);
+    }
+  }
+}
