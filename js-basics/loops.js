@@ -47,3 +47,19 @@ while (currentCard != 'Spade') {
 }
 
 console.log('Success! You flipped a Spade!');
+
+// While loop with nested for loop
+
+let something = ['one thing', 'another thing', 'something else', 'one more thing'];
+let numbers = [1, 2, 3, 4, 5];
+let currentThing = 'one more thing';
+
+while (currentThing != 'one thing') {
+    console.log(currentThing);
+    currentThing = something[Math.floor(Math.random() * 4)];
+    for (i = 0; i < numbers.length; i++) {
+        console.log(numbers[i]);
+    }
+}
+
+console.log('ONE THING!!!');
