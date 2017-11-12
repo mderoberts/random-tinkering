@@ -22,3 +22,13 @@ let newFruits = fruits.forEach(fruit => console.log(fruit.toUpperCase()));
 
 console.log(newFruits);
 
+// forEach push to empty array
+
+const items = ['item1', 'item2', 'item3'];
+const copy = [];
+
+items.forEach(function(item){
+  copy.push(item)
+});
+
+console.log(copy);
