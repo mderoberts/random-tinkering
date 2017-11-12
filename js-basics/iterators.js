@@ -32,3 +32,13 @@ items.forEach(function(item){
 });
 
 console.log(copy);
+
+// map method
+
+let animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+let secretMessage = animals.map(function(letter) {
+    return letter[0];
+});
+
+console.log(secretMessage.join(''));
