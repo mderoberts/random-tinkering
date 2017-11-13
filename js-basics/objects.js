@@ -1,3 +1,6 @@
+let something = 1;
+let message = 'nothing';
+
 let myObject = {
   prop1: 'String',
   prop2: 23
@@ -13,6 +16,17 @@ myObject.myMethod = () => {
 myObject.myMethod2 = function() {
 	return `I like ${this.prop3[2]}!`;
 };
+
+if (something = 1) {
+	message = myObject.prop3[4];
+} else if (something = 3) {
+	message = myObject.prop3[0];
+} else {
+	message = message;
+}
+	
+console.log(myObject[message]);
+
 
 
 console.log(myObject);
