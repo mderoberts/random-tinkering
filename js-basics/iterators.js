@@ -42,3 +42,7 @@ let secretMessage = animals.map(function(letter) {
 });
 
 console.log(secretMessage.join(''));
+
+// map and filter
+
+let randomNumbers = [375, 200, 3.14, 7, 13, 852]; 
