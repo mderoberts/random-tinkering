@@ -46,3 +46,6 @@ console.log(secretMessage.join(''));
 // map and filter
 
 let randomNumbers = [375, 200, 3.14, 7, 13, 852]; 
+
+let biggerNums = randomNumbers.map(numbers => numbers * 10);
+console.log(biggerNums);
