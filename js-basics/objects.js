@@ -10,6 +10,11 @@ myObject.myMethod = () => {
 	return 'Success!';
 };
 
+myObject.myMethod2 = function() {
+	return `I like ${this.prop3[2]}!`;
+};
+
 
 console.log(myObject);
 console.log(myObject.myMethod());
+console.log(myObject.myMethod2());
