@@ -1,3 +1,5 @@
+// Push prompt responses to empty array
+
 let answers = [];
 
 let questions = () => {
@@ -12,3 +14,13 @@ let question2 = () => {
 questions();
 question2();
 console.log(answers);
+
+// Looping through arguments (ES5)
+
+function argLoop(x, y, z) {
+    for (i = 0; i < arguments.length; i++) {
+        console.log(typeof arguments[i]);
+    }
+}
+
+argLoop(1, 'word', true);
