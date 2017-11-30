@@ -24,3 +24,20 @@ function argLoop(x, y, z) {
 }
 
 argLoop(1, 'word', true);
+
+// Argument loop with conditions and prompts
+
+function argLoop2(x, y, z) {
+    for (i = 0; i < arguments.length; i++) {
+        console.log(typeof arguments[i]);
+			if (typeof arguments[i] == 'string') {
+				alert("It's a string!");
+            } else if (typeof arguments[i] == 'number') {
+prompt('It was a number! Type something else!'); 
+            } else if (typeof arguments[i] == 'boolean') {
+confirm('Are you sure?');
+            }
+    }
+}
+
+argLoop2('Thursday', 2, true);
