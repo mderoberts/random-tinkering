@@ -8,3 +8,7 @@ let questions = () => {
 let question2 = () => {
 	answers.push(prompt('Type something else.'));
 };
+
+questions();
+question2();
+console.log(answers);
