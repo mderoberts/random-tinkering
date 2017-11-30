@@ -41,3 +41,17 @@ confirm('Are you sure?');
 }
 
 argLoop2('Thursday', 2, true);
+
+// Vowel checker (needs true vowel loop fix)
+
+let vowelChecker = (x) => {
+          let vowels = ['a', 'e', 'i', 'o', 'u'];
+            vowels.forEach(vowel => {
+              if (x == vowel) {
+                console.log(`${x} is a vowel!`);
+              } else {
+                console.log(`${x} is not a vowel!`);
+              }
+            });
+        };
+
