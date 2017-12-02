@@ -42,16 +42,30 @@ confirm('Are you sure?');
 
 argLoop2('Thursday', 2, true);
 
-// Vowel checker (needs true vowel loop fix)
+// Vowel checker (loop and indexOf)
+
+// Loop checks and logs against all vowels – not the right approach
+// let vowelChecker = (x) => {
+//           let vowels = ['a', 'e', 'i', 'o', 'u'];
+//             vowels.forEach(vowel => {
+//               if (x == vowel) {
+//                 console.log(`${x} is a vowel!`);
+//               } else {
+//                 console.log(`${x} is not a vowel!`);
+//               }
+//             });
+//         };
 
 let vowelChecker = (x) => {
-          let vowels = ['a', 'e', 'i', 'o', 'u'];
-            vowels.forEach(vowel => {
-              if (x == vowel) {
-                console.log(`${x} is a vowel!`);
-              } else {
-                console.log(`${x} is not a vowel!`);
-              }
-            });
-        };
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  if (vowels.indexOf(x) !== -1) {
+    console.log("It's a vowel!");
+  } else {
+    console.log("Not a vowel.");
+  }
+};
+
+vowelChecker('u');
+vowelChecker('t');
+
 
