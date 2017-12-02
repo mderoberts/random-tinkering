@@ -58,6 +58,7 @@ argLoop2('Thursday', 2, true);
 
 let vowelChecker = (x) => {
   let vowels = ['a', 'e', 'i', 'o', 'u'];
+  x = x.toLowerCase(); 
   if (vowels.indexOf(x) !== -1) {
     console.log("It's a vowel!");
   } else {
